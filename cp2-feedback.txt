@@ -1,0 +1,11 @@
+Please fill out the following and submit with your CP 2 submission (added to help us know what to focus on when grading):
+
+1. What have you learned and applied in CP 2 since CP 1?
+I have learned basic Javascript syntax and how to use Javascript within my website.
+I learned how to access elements from the document and use event driven programming
+to make a basic game.
+I also learned about basic html UI elements.
+2. To what extent would you like feedback in CP 2 (e.g. thorough, particular areas of HTML/CSS/JS/UI)?
+I would like feedback on the quality of my Javascript code.
+3. Anything else you would like the grader to know?
+No.

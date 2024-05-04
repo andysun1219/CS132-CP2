@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<!--
+  Author: Andy Sun
+  CS 132 Spring 2024
+  Date: 4/12/24
+
+  This is the index.html page for my CP2 tic tac toe project.
+  It includes an overview of the rules and the actual game grid itself
+  which player can interact with,
+-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Delicious+Handrawn&display=swap" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+    <script src="utils.js"></script>
+    <script defer src="tictactoe.js"></script>
+    <title>Tic Tac Toe</title>
+</head>
+<body>
+    <header>
+        <h1>Tic Tac Toe</h1>
+    </header>
+    <main>
+        <section id = "rules-view">
+            <ul>
+                <li> Each player takes a turn marking a square with their mark. </li>
+                <li> Each player aims to get three of their marks in a row whether in the same
+                    column, row, or diagonally.  </li>
+                <li>If all 9 squares of the grid are full and no player has their
+                    3 marks in a row, the game ends in a tie.
+                </li>
+            </ul>
+            <div>
+                <input type = "checkbox" id="check" >
+                <label for = "check"> Two Players Required: I understand. </label>
+            </div>
+            <button type = "button" id = "goto-button"> Go To Game </button>
+        </section>
+        <section id = "grid-view" class = "hidden">
+            <h2 id = "instructions">
+                Start A Game!
+            </h2>
+            <div id = "tictactoe-grid">
+                <div id = "place11" class = "gridspot">
+                    <img src = "imgs/x.jpeg" class = "mark" alt = "red mark">
+                </div>
+                <div id = "place12" class = "gridspot">
+                    <img src = "imgs/o.jpeg" class = "mark" alt = "blue mark">
+                </div>
+                <div id = "place13" class = "gridspot"></div>
+                <div id = "place21" class = "gridspot"></div>
+                <div id = "place22" class = "gridspot"></div>
+                <div id = "place23" class = "gridspot"></div>
+                <div id = "place31" class = "gridspot"></div>
+                <div id = "place32" class = "gridspot"></div>
+                <div id = "place33" class = "gridspot"></div>
+            </div>
+            <div id = "buttons">
+                <button type = "button" id = "start-button"> Start New Game</button>
+                <button type = "button" id = "rules-button"> Return To Rules </button>
+            </div>      
+        </section>
+    </main>
+    <footer>
+        <p> Photos From Andy</p>
+    </footer>
+    
+</body>
+</html>

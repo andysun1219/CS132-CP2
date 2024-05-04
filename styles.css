@@ -1,0 +1,110 @@
+/*
+    Author: Andy Sun
+    CS 132 Spring 2024
+    Date: May 4, 2024
+    This is the styles.css page for my CP2 tic tac toe project. It is used
+    by index.html.
+*/
+
+body, #grid-view, #rules-view, #buttons {
+    display: flex;
+}
+
+body, #grid-view, #rules-view {
+    flex-direction: column;
+}
+
+#buttons {
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+#grid-view  {
+    justify-content: center;
+}
+
+#rules-view > ul, h2 {
+    font-size: 30pt;
+}
+
+#rules-view > ul, #buttons {
+    width: 50%;
+}
+
+h1 {
+    font-size: 48pt;
+}
+
+h2 {
+    color: red;
+}
+
+h1, footer {
+    text-align: center;
+}
+
+body {
+    background-color: #520edb;
+    font-family: Delicious Handrawn, sans-serif;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+  
+footer {
+    font-style: italic;
+    margin-top: 50px;
+}
+
+button {
+    background-color: #32a852;
+    margin-top: 15px;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+button {
+    cursor: pointer;
+}
+
+#grid-view, #rules-view {
+    align-items: center;
+}
+
+#tictactoe-grid {
+    background-color: white;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0px;
+}
+
+#tictactoe-grid > div {
+    padding: 0%;
+    margin: 0%;
+    height: 200px;
+    width: 200px;
+}
+
+#grid-view img {
+    height: 100%;
+    width: 100%;
+}
+
+.hidden, #rules-view.hidden, #grid-view.hidden {
+    display: none;
+}
+
+#place11,  #place31, #place21 {
+    border-right: 2px solid black;
+}
+
+#place11, #place12, #place13 {
+    border-bottom: 2px solid black;
+}
+
+#place13,  #place23, #place33 {
+    border-left: 2px solid black;
+}
+
+#place31, #place32, #place33  {
+    border-top: 2px solid black;
+}
